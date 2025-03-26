@@ -5,6 +5,10 @@ html {
 }
 
 .container {
+  display: grid;
+  grid-template-columns: 25fr 75fr;
+  grid-template-rows: 12.5fr 12.5fr 62.5fr 12.5fr;
+  gap: 15px;
   text-align: center;
   height: 100%;
   padding: 16px;
@@ -22,10 +26,12 @@ html {
 
 .header {
   background-color: #006157;
+  grid-column: 1 / span 2;
 }
 
 .sidebar {
   background-color: #005B94;
+  grid-row: 2 / span 2;
 }
 
 .nav {
@@ -38,6 +44,7 @@ html {
 
 .footer {
   background-color: #393f4d;
+  grid-column: 1 / span 2;
 }
 
 .article p {
